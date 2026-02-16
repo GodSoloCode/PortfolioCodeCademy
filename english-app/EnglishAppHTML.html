@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Learning Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="EnglishAppCSS.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen">
+            <h1>English Learning Quiz</h1>
+            <p>Select difficulty:</p>
+            <div class="difficulty-buttons">
+                <button class="difficulty-btn" data-level="beginner">🎯 Beginner</button>
+                <button class="difficulty-btn" data-level="experienced">🚀 Experienced</button>
+                <button class="difficulty-btn" data-level="expert">🔥 Expert</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <span id="progress">Question 1 of 3</span>
+                <span id="score">Score: 0</span>
+            </div>
+            <h2 id="question-text">Question text</h2>
+            <div class="options">
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen hidden">
+            <div class="score-circle-container">
+                <svg class="score-circle" width="150" height="150">
+                    <circle class="bg-circle" cx="75" cy="75" r="70"></circle>
+                    <circle class="progress-circle" cx="75" cy="75" r="70"></circle>
+                </svg>
+                <div class="score-text">
+                    <span id="score-value">0</span> / <span id="total-questions">3</span>
+                </div>
+            </div>
+            <p id="result-message" style="margin-top:1rem;font-weight:bold;"></p>
+            <button id="restart-btn">Try Again</button>
+        </div>
+
+    </div>
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="EnglishQuizQuestions.js"></script>
+</body>
+
+</html>
