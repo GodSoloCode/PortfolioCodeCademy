@@ -1,14 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: white;
-    color: black;
-    transition: 0.3s;
-}
-
-/* Dark Mode */
-.dark {
-    background-color: #121212;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
     color: white;
 }
 
@@ -16,55 +9,61 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: white;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-nav button {
-    padding: 8px 15px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Header */
+/* Hero */
 header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px;
 }
 
-header button {
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
+header h1 {
+    font-size: 48px;
+}
+
+header p {
+    font-size: 20px;
 }
 
 /* Sections */
 section {
-    padding: 40px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-/* Project Cards */
+/* Project Card */
 .project-card {
-    border: 1px solid gray;
-    padding: 20px;
-    margin: 15px auto;
-    width: 300px;
-    cursor: pointer;
+    background: white;
+    color: black;
+    padding: 30px;
+    margin: 30px auto;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
 
 .project-card:hover {
-    background-color: #007bff;
-    color: white;
     transform: scale(1.05);
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #007bff;
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background: #2a5298;
     color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #1e3c72;
+}
+
+/* Dark mode */
+.dark {
+    background: black;
 }
