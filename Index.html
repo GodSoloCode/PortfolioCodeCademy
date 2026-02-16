@@ -12,135 +12,97 @@
 
     <!-- NAVBAR -->
     <nav>
-
         <h2>Bendre</h2>
-
-        <button onclick="toggleDarkMode()">
-            Toggle Dark Mode
-        </button>
-
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </nav>
 
     <!-- HERO -->
     <header>
-
         <h1>Hello, I'm Bendre</h1>
-
         <img src="resources/cat.jpg" alt="Bendre Profile Photo" class="profile-photo">
-
         <p>Front-End Developer | JavaScript | HTML | CSS</p>
-
         <p id="typing"></p>
-
-        <button onclick="scrollToProjects()">
-            View My Work
-        </button>
-
+        <button onclick="scrollToProjects()">View My Work</button>
     </header>
 
     <!-- ABOUT -->
     <section>
-
         <h2>About Me</h2>
-
-        <p>
-            I am an aspiring Front-End Developer building real-world applications using HTML, CSS, and JavaScript.
-        </p>
-
-        <p>
-            With over 7 years of professional English teaching experience, I bring strong communication,
-            problem-solving, and user-focused thinking into my development work.
-        </p>
-
-        <p>
-            My goal is to transition into a professional front-end developer role and build meaningful applications.
-        </p>
-
+        <p>I am an aspiring Front-End Developer building real-world applications using HTML, CSS, and JavaScript.</p>
+        <p>With over 7 years of professional English teaching experience, I bring strong communication, problem-solving,
+            and user-focused thinking into my development work.</p>
+        <p>My goal is to transition into a professional front-end developer role and build meaningful applications.</p>
     </section>
 
     <!-- SKILLS -->
     <section>
-
         <h2>Skills</h2>
-
         <div class="skills">
-
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
             <div class="skill">JavaScript</div>
             <div class="skill">DOM Manipulation</div>
             <div class="skill">Git</div>
             <div class="skill">GitHub</div>
-
         </div>
-
     </section>
 
     <!-- PROJECTS -->
     <section id="projects">
-
         <h2>Projects</h2>
 
+        <!-- English App -->
         <div class="project-card">
-
             <h3>English Learning App</h3>
-
-            <p>
-                An interactive English learning application built using HTML, CSS, JavaScript,
-                and deployed as an Android APK using WebView.
-            </p>
-
+            <p>An interactive English learning application built using HTML, CSS, JavaScript, and deployed as an Android
+                APK using WebView.</p>
             <p><strong>Features:</strong></p>
-
             <ul>
                 <li>Interactive quiz functionality</li>
                 <li>Dynamic JavaScript logic</li>
                 <li>Android APK support</li>
                 <li>User-friendly interface</li>
             </ul>
-
             <div class="buttons">
-
-                <a href="english-app/EnglishAppHTML.html">
-                    <button>Live Web Version</button>
-                </a>
-
-                <a href="apps/EnglishLearningApp.apk" download>
-                    <button>Download Android APK</button>
-                </a>
-
-                <button onclick="showProjectInfo()">
-                    Project Info
-                </button>
-
+                <a href="english-app/EnglishAppHTML.html"><button>Live Web Version</button></a>
+                <a href="apps/EnglishLearningApp.apk" download><button>Download Android APK</button></a>
+                <button onclick="showEnglishAppInfo()">Project Info</button>
             </div>
+        </div>
 
+        <!-- No Dodges Game -->
+        <div class="project-card">
+            <h3>No Dodges</h3>
+            <p>An interactive simple browser-based game. Built with HTML, CSS, and JavaScript to
+                demonstrate real-time DOM updates and game logic.</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Player movement using keyboard</li>
+                <li>Dynamic obstacle generation</li>
+                <li>Score tracking and game over logic</li>
+            </ul>
+            <div class="buttons">
+                <a href="NoDodges/index.html"><button>Live Demo</button></a>
+                <a href="https://github.com/YOURUSERNAME/no-dodges"><button>View Code</button></a>
+                <button onclick="showNoDodgesInfo()">Project Info</button>
+            </div>
         </div>
 
     </section>
 
     <!-- CONTACT -->
     <section>
-
         <h2>Contact</h2>
-
-        <button onclick="showEmail()">
-            Show Email
-        </button>
-
+        <button onclick="showEmail()">Show Email</button>
         <p id="email"></p>
-
     </section>
 
     <!-- FOOTER -->
     <footer>
-
         © 2026 Bendre | Front-End Developer
-
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>

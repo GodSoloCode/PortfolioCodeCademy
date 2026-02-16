@@ -1,94 +1,69 @@
 body {
-
     font-family: Arial, sans-serif;
     margin: 0;
     background: linear-gradient(to right, #1e3c72, #2a5298);
     color: white;
     transition: 0.3s;
-
 }
 
 /* NAVBAR */
-
 nav {
-
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
     background: rgba(0, 0, 0, 0.3);
-
 }
 
 nav button {
-
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
     border: none;
-
 }
 
 /* HERO */
-
 header {
-
     text-align: center;
     padding: 80px 20px;
-
 }
 
 header h1 {
-
     font-size: 48px;
-
 }
 
 /* PROFILE PHOTO */
-
 .profile-photo {
-
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin: 20px;
     object-fit: cover;
     border: 3px solid white;
-
 }
 
 /* SECTIONS */
-
 section {
-
     padding: 60px 20px;
     text-align: center;
-
 }
 
 /* SKILLS */
-
 .skills {
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .skill {
-
     background: white;
     color: black;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
-
 }
 
 /* PROJECT CARD */
-
 .project-card {
-
     background: white;
     color: black;
     padding: 30px;
@@ -96,27 +71,20 @@ section {
     width: 350px;
     border-radius: 10px;
     transition: 0.3s;
-
 }
 
 .project-card:hover {
-
     transform: scale(1.05);
-
 }
 
 /* BUTTONS */
-
 .buttons {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 button {
-
     padding: 10px 20px;
     margin: 10px;
     border: none;
@@ -125,30 +93,21 @@ button {
     cursor: pointer;
     border-radius: 5px;
     width: 200px;
-
 }
 
 button:hover {
-
     background: #1e3c72;
-
 }
 
 /* FOOTER */
-
 footer {
-
     text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.3);
-
 }
 
 /* DARK MODE */
-
 .dark {
-
     background: black;
     color: white;
-
 }
