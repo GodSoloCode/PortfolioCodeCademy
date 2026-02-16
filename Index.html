@@ -10,33 +10,59 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- NAVBAR -->
     <nav>
         <h2>Bendre</h2>
-        <div>
-            <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
-        </div>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <header>
         <h1>Hello, I'm Bendre</h1>
-        <p>Aspiring Front-End Developer</p>
-        <button onclick="showMessage()">About My Journey</button>
-        <p id="message"></p>
+        <p>Front-End Developer | JavaScript | HTML | CSS</p>
+
+        <p id="typing"></p>
+
+        <button onclick="scrollToProjects()">View My Work</button>
     </header>
 
-    <!-- About -->
-    <section id="about">
+    <!-- ABOUT -->
+    <section>
         <h2>About Me</h2>
+
         <p>
-            I am an aspiring Front-End Developer currently building strong skills in HTML, CSS, and JavaScript.
-            I also have 7+ years of professional English teaching experience, which has developed my communication,
-            problem-solving, and leadership abilities.
+            I am an aspiring Front-End Developer currently building real-world applications using HTML, CSS, and
+            JavaScript.
+        </p>
+
+        <p>
+            With over 7 years of professional English teaching experience, I bring strong communication,
+            problem-solving, and user-focused thinking into my software development work.
+        </p>
+
+        <p>
+            My goal is to transition into a professional front-end developer role and build meaningful applications.
         </p>
     </section>
 
-    <!-- Projects -->
+    <!-- SKILLS -->
+    <section>
+        <h2>Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">DOM Manipulation</div>
+            <div class="skill">Git</div>
+            <div class="skill">GitHub</div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects">
 
         <h2>Projects</h2>
@@ -46,37 +72,48 @@
             <h3>English Learning App</h3>
 
             <p>
-                An interactive English learning application built using JavaScript, HTML, and CSS.
-                This app allows users to test their English knowledge through quiz-based interaction.
+                An interactive English learning quiz application built using JavaScript.
+                Designed to help users practice English skills through interactive questions.
             </p>
 
-            <p><strong>Technologies used:</strong></p>
+            <p><strong>Features:</strong></p>
 
             <ul>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>Interactive quiz functionality</li>
+                <li>Dynamic JavaScript logic</li>
+                <li>User-friendly interface</li>
             </ul>
 
-            <a href="english-app/EnglishAppHTML.html">
-                <button>Live Demo</button>
-            </a>
+            <div class="buttons">
+
+                <a href="english-app/EnglishAppHTML.html">
+                    <button>Live Demo</button>
+                </a>
+
+                <button onclick="showProjectInfo()">
+                    Project Info
+                </button>
+
+            </div>
 
         </div>
 
     </section>
 
+    <!-- CONTACT -->
+    <section>
 
-    <!-- Contact -->
-    <section id="contact">
         <h2>Contact</h2>
+
         <button onclick="showEmail()">Show Email</button>
+
         <p id="email"></p>
+
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Bendre | Front-End Developer</p>
+        © 2026 Bendre | Front-End Developer
     </footer>
 
     <script src="script.js"></script>
