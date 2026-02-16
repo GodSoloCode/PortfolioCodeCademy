@@ -1,4 +1,5 @@
 // DARK MODE
+
 function toggleDarkMode() {
 
     document.body.classList.toggle("dark");
@@ -6,6 +7,7 @@ function toggleDarkMode() {
 }
 
 // SCROLL TO PROJECTS
+
 function scrollToProjects() {
 
     document.getElementById("projects")
@@ -14,18 +16,20 @@ function scrollToProjects() {
 }
 
 // SHOW EMAIL
+
 function showEmail() {
 
     document.getElementById("email").innerText =
-        "Email: 14shwb@gmail.com";
+        "Email: your@email.com";
 
 }
 
-// PROJECT INFO BUTTON
+// PROJECT INFO
+
 function showProjectInfo() {
 
     alert(
-        "This English Learning App was built using HTML, CSS, and JavaScript. It demonstrates DOM manipulation and interactive quiz logic."
+        "This English Learning App was built using HTML, CSS, JavaScript, and deployed as an Android APK using WebView."
     );
 
 }
@@ -33,7 +37,7 @@ function showProjectInfo() {
 // TYPING EFFECT
 
 const text =
-    "Building interactive web applications and transitioning into professional front-end development.";
+    "Building interactive web applications and deployable Android apps.";
 
 let index = 0;
 

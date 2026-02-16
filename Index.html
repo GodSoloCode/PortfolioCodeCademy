@@ -12,46 +12,55 @@
 
     <!-- NAVBAR -->
     <nav>
+
         <h2>Bendre</h2>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+        <button onclick="toggleDarkMode()">
+            Toggle Dark Mode
+        </button>
+
     </nav>
 
     <!-- HERO -->
     <header>
+
         <h1>Hello, I'm Bendre</h1>
+
+        <img src="resources/cat.jpg" alt="Bendre Profile Photo" class="profile-photo">
+
         <p>Front-End Developer | JavaScript | HTML | CSS</p>
 
         <p id="typing"></p>
 
-        <button onclick="scrollToProjects()">View My Work</button>
-    </header>
+        <button onclick="scrollToProjects()">
+            View My Work
+        </button>
 
-    <!-- Profile Photo Placeholder-->
-    <section id="profilepicture">
-        <img src="resources/cat.jpg" alt="Bendre's Profile Photo" class="profile-photo">
-    </section>
+    </header>
 
     <!-- ABOUT -->
     <section>
+
         <h2>About Me</h2>
 
         <p>
-            I am an aspiring Front-End Developer currently building real-world applications using HTML, CSS, and
-            JavaScript.
+            I am an aspiring Front-End Developer building real-world applications using HTML, CSS, and JavaScript.
         </p>
 
         <p>
             With over 7 years of professional English teaching experience, I bring strong communication,
-            problem-solving, and user-focused thinking into my software development work.
+            problem-solving, and user-focused thinking into my development work.
         </p>
 
         <p>
             My goal is to transition into a professional front-end developer role and build meaningful applications.
         </p>
+
     </section>
 
     <!-- SKILLS -->
     <section>
+
         <h2>Skills</h2>
 
         <div class="skills">
@@ -77,8 +86,8 @@
             <h3>English Learning App</h3>
 
             <p>
-                An interactive English learning quiz application built using JavaScript.
-                Designed to help users practice English skills through interactive questions.
+                An interactive English learning application built using HTML, CSS, JavaScript,
+                and deployed as an Android APK using WebView.
             </p>
 
             <p><strong>Features:</strong></p>
@@ -86,13 +95,18 @@
             <ul>
                 <li>Interactive quiz functionality</li>
                 <li>Dynamic JavaScript logic</li>
+                <li>Android APK support</li>
                 <li>User-friendly interface</li>
             </ul>
 
             <div class="buttons">
 
                 <a href="english-app/EnglishAppHTML.html">
-                    <button>Live Demo</button>
+                    <button>Live Web Version</button>
+                </a>
+
+                <a href="apps/EnglishLearningApp.apk" download>
+                    <button>Download Android APK</button>
                 </a>
 
                 <button onclick="showProjectInfo()">
@@ -110,7 +124,9 @@
 
         <h2>Contact</h2>
 
-        <button onclick="showEmail()">Show Email</button>
+        <button onclick="showEmail()">
+            Show Email
+        </button>
 
         <p id="email"></p>
 
@@ -118,7 +134,9 @@
 
     <!-- FOOTER -->
     <footer>
+
         © 2026 Bendre | Front-End Developer
+
     </footer>
 
     <script src="script.js"></script>
